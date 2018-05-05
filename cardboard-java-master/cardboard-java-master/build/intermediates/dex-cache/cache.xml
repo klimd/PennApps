@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Klimentina\Desktop\PennApps\cardboard-java-master\cardboard-java-master\CardboardSample\libs\cardboard.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="32c8e30df7bdcbf982603f70aeaf89e207f44219">
+        <dex dex="C:\Users\Klimentina\Desktop\PennApps\cardboard-java-master\cardboard-java-master\CardboardSample\build\intermediates\pre-dexed\debug\cardboard_19547e9a621e457f557d706f53b0632380a1dd0f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Klimentina\Desktop\PennApps\cardboard-java-master\cardboard-java-master\CardboardSample\libs\audio.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="74fcb5c43eb6843ec691a1a1013a4d38eac2de41">
+        <dex dex="C:\Users\Klimentina\Desktop\PennApps\cardboard-java-master\cardboard-java-master\CardboardSample\build\intermediates\pre-dexed\debug\audio_049636d57c3b86ad8e0999bc9b5b9696656def6a.jar" />
+    </item>
+
+</items>

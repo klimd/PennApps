@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Klimentina\\Desktop\\PennApps\\cardboard-java-master\\cardboard-java-master\\CardboardSample\\build\\intermediates\\res\\merged\\debug\\raw\\passthrough_fragment.shader",
+        "source": "C:\\Users\\Klimentina\\Desktop\\PennApps\\cardboard-java-master\\cardboard-java-master\\CardboardSample\\src\\main\\res\\raw\\passthrough_fragment.shader"
+    },
+    {
+        "merged": "C:\\Users\\Klimentina\\Desktop\\PennApps\\cardboard-java-master\\cardboard-java-master\\CardboardSample\\build\\intermediates\\res\\merged\\debug\\raw\\light_vertex.shader",
+        "source": "C:\\Users\\Klimentina\\Desktop\\PennApps\\cardboard-java-master\\cardboard-java-master\\CardboardSample\\src\\main\\res\\raw\\light_vertex.shader"
+    },
+    {
+        "merged": "C:\\Users\\Klimentina\\Desktop\\PennApps\\cardboard-java-master\\cardboard-java-master\\CardboardSample\\build\\intermediates\\res\\merged\\debug\\raw\\grid_fragment.shader",
+        "source": "C:\\Users\\Klimentina\\Desktop\\PennApps\\cardboard-java-master\\cardboard-java-master\\CardboardSample\\src\\main\\res\\raw\\grid_fragment.shader"
+    }
+]

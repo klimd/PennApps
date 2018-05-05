@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Klimentina\Desktop\PennApps\cardboard-java-master\cardboard-java-master\CardboardSample\src\main\assets"><file name="cube_sound.wav" path="C:\Users\Klimentina\Desktop\PennApps\cardboard-java-master\cardboard-java-master\CardboardSample\src\main\assets\cube_sound.wav"/></source></dataSet><dataSet config="debug"><source path="C:\Users\Klimentina\Desktop\PennApps\cardboard-java-master\cardboard-java-master\CardboardSample\src\debug\assets"/></dataSet></merger>

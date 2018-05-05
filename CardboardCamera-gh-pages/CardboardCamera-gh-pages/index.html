@@ -1,0 +1,87 @@
+<html lang="en"><head>
+    <title>Cardboard Camera</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+      body {
+        margin: 0px;
+        overflow: hidden;
+      }
+      video{
+        position: absolute;
+        top:0;
+        left:0;
+      }
+      #webglviewer {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 100;
+      }
+      #canvasToTrack{
+        visibility: hidden;
+      }
+      #overlay{
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:9999999999;
+        width:100%;height:100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="webglviewer"></div>
+
+    <canvas id="canvasToTrack"></canvas>
+    <canvas id="overlay"></canvas>
+
+    <script src="js/third-party/tracking-min.js"></script>
+    <script src="js/third-party/threejs/three.js"></script>
+    <script src="js/third-party/threejs/StereoEffect.js"></script>
+    <script src="js/third-party/threejs/DeviceOrientationControls.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      var overlayCanvas = document.getElementById('overlay');
+      var overlayCanvasContext = overlayCanvas.getContext('2d');
+      var tracker = new tracking.ColorTracker(['yellow']);
+
+      function fullscreen() {
+        if (container.requestFullscreen && overlayCanvas.requestFullscreen) {
+          container.requestFullscreen();
+          overlayCanvas.requestFullscreen();
+        } else if (container.msRequestFullscreen && overlayCanvas.msRequestFullscreen) {
+          container.msRequestFullscreen();
+          overlayCanvas.msRequestFullscreen();
+        } else if (container.mozRequestFullScreen && overlayCanvas.mozRequestFullScreen) {
+          container.mozRequestFullScreen();
+          overlayCanvas.mozRequestFullScreen();
+        } else if (container.webkitRequestFullscreen && overlayCanvas.webkitRequestFullscreen) {
+          container.webkitRequestFullscreen();
+          overlayCanvas.webkitRequestFullscreen();
+        }
+      }
+
+      overlayCanvas.addEventListener('click', fullscreen, false);
+
+      tracker.on('track', function(event) {
+        overlayCanvasContext.clearRect(0, 0, overlayCanvas.width, overlayCanvas.height);
+        event.data.forEach(function(rect) {
+          if (rect.color === 'custom') {
+            rect.color = tracker.customColor;
+          }
+
+          overlayCanvasContext.fillStyle = rect.color;
+          overlayCanvasContext.fillRect(rect.x, rect.y, rect.width, rect.height);
+        });
+      });
+
+      setInterval(function(){
+        tracking.track('#canvasToTrack', tracker);
+      },100);
+    </script>
+  </body>
+</html>

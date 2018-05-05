@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Klimentina\Desktop\PennApps\cardboardVideoSample-master\cardboardVideoSample-master\CardboardSample\libs\cardboard.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2403806886bbe517707b43afb5e5c9ce9883c4d2">
+        <dex dex="C:\Users\Klimentina\Desktop\PennApps\cardboardVideoSample-master\cardboardVideoSample-master\CardboardSample\build\intermediates\pre-dexed\debug\cardboard_c2e27b2097ecaa887545585f7fce4208e2a3bc99.jar" />
+    </item>
+    <item
+        jar="C:\Users\Klimentina\Desktop\PennApps\cardboardVideoSample-master\cardboardVideoSample-master\CardboardSample\libs\libprotobuf-java-2.6-nano.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2ba3ce68542db5a4b672a22606e4fd4631ed5c4f">
+        <dex dex="C:\Users\Klimentina\Desktop\PennApps\cardboardVideoSample-master\cardboardVideoSample-master\CardboardSample\build\intermediates\pre-dexed\debug\libprotobuf-java-2.6-nano_05dbaf6c7ae929f21ac5fcb4d470ec74c925a86c.jar" />
+    </item>
+
+</items>
